@@ -1,0 +1,34 @@
+{
+  "name": "@screepts/screeps-metrics-exporter",
+  "version": "1.0.0",
+  "description": "A Screeps metrics exporter that streams metrics to Prometheus, VictoriaMetrics, or other compatible systems.",
+  "keywords": [
+    "grafana",
+    "graphite",
+    "prometheus",
+    "pushgateway",
+    "victoria",
+    "victoriametrics"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "lint": "oxlint --type-check --type-aware",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "test": "node --run fmt:check && node --run lint"
+  },
+  "dependencies": {
+    "@jsonquerylang/jsonquery": "^5.1.1",
+    "he": "^1.2.0",
+    "screeps-api": "npm:@screepts/screeps-api@^1.1.0"
+  },
+  "devDependencies": {
+    "@types/he": "^1.2.3",
+    "@types/node": "^25.5.2",
+    "oxfmt": ">=0.40.0 <2.0.0",
+    "oxlint": "^1.50.0",
+    "oxlint-tsgolint": ">=0.17.0 <2.0.0"
+  }
+}

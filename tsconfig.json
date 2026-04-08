@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "types": ["node"],
+    "module": "node20",
+    "checkJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true
+  },
+  "include": ["main.js"]
+}
