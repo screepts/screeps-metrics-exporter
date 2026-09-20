@@ -29,7 +29,7 @@
     "@types/he": "^1.2.3",
     "@types/node": "^25.5.2",
     "oxfmt": ">=0.40.0 <2.0.0",
-    "oxlint": "^1.50.0",
-    "oxlint-tsgolint": ">=0.17.0 <2.0.0"
+    "oxlint": "^1.83.0",
+    "oxlint-tsgolint": "^7.0.0"
   }
 }
