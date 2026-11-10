@@ -157,7 +157,10 @@ function pushMetrics(data, labels = {}) {
   }
 }
 
-api.socket.on("error", console.error)
+api.socket.on("error", (err) => {
+  console.error("Socket error:", err)
+  process.exit(1)
+})
 
 if (CONSOLE_QUERY) {
   const isConsoleQuery = compileJsonQuery(CONSOLE_QUERY)
